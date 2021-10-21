@@ -1,100 +1,200 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     outline: 0;
-    box-sizing: 0 auto;
-}
-
-body{ 
-    font-family: monospace;
+    box-sizing: border-box;
 }
 
 .container{
     width: 100%;
     max-width: 1024px;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
 
 header{
- background-color: rgb(28,33,82); 
- color: white;
- height: 146px;
- border: 2px solid black;
- margin: 50px, 20px;
- padding: 40px;
- font-size: 25px;
- text-align: center;
- word-spacing: 5px;
- background-image: url(../img/slogan\ 1.svg), url(../img/carrinho\ 1.svg), url(../img/menu\ 1.svg);
- background-repeat: no-repeat, no-repeat, no-repeat ;
- background-position: top left, bottom 50px right 150px, bottom 50px right 50px;
-}
-
-nav ul{ 
-
     display: flex;
-    flex-direction: row;
-    font-size: 18px;
-}
-
-nav ul li {
-
-    list-style-type:none;
-    color: black;
+    background-color: rgb(28,33,82); 
+    height: 232px;
     border: 2px solid black;
-    height: 22px ;
-    padding: 20px ;
-    width: 50px;
-    margin-left: 18%;
-    margin-top: 2% ;
-    margin-bottom: 2% ;
+    align-items: center;
+}
+
+header picture{
+    background-image: url(/img/logo\ site.png);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header h1{
+    color: white;
+    padding: 30px;
+    width: 100%;
+    font-size: 30px;
+    word-spacing: 5px;
+    text-align: right;
+}
+
+nav ul li a{
+    display: grid;
+    text-align: center;
+    background-position: center;
+    
+}
+
+nav input{
+
+    margin-left: 455px;
+    background-color: white;
+    border: 1px solid black;
+    list-style-type: none;
+    padding: 0.4rem;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+nav ul{
+
+    list-style-type: none;
+    padding: 2rem;
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 
 }
 
-nav ul li:hover{
-    background-color:lightskyblue;
+nav > ul li:hover{
+    background-color: darkcyan;
+    cursor: pointer;
+}
+
+nav ul{
+   display: inline-block;
+   flex-direction: row;
+}
+
+nav > ul li {
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+    margin-left: 140px;
+}
+
+div.image{
+    background-image: url(/img/depositphotos_55895051-stock-photo-biker-girl-riding-on-a.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+main p{
     cursor: pointer;
 }
 
 
-nav picture{ 
-
-    background-image: url("../img/exemplo\ 1.svg");
+p.nova1{
+    
+    background-image: url(/img/1\ nova.svg);
+    display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
-    width: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid black;
-        
+    margin-left: 20px;
+    height: 250px;
+    width: 100%;
+
+}
+
+p.nova2{
+    
+    background-image: url(/img/2\ nova.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+    height: 250px;
+    width: 100%;
+
+}
+
+p.usada1{
+    background-image: url(/img/1\ usada.svg);
+    background-position: center;
+    display: inline-block;
+    margin-left: 300px;
+    height: 220px;
+    width: 40%;
+    background-repeat: no-repeat;
+
+}
+
+p.usada2{
+    background-image: url(/img/2\ usada.svg);
+    background-position: center;
+    display: inline-block;
+    margin-left: 300px;
+    height: 230px;
+    width: 40%;
+    background-repeat: no-repeat;
+
+}
+
+p.para{
+    background-image: url(/img/paralama.svg);
+    background-position: center;
+    display: inline-block;
+    margin-left: 300px;
+    height: 280px;
+    width: 40%;
+    background-repeat: no-repeat;
+
+}
+
+p.capa{
+    background-image: url(/img/capacete.svg);
+    background-position: center;
+    display: inline-block;
+    margin-left: 300px;
+    height: 280px;
+    width: 40%;
+    background-repeat: no-repeat;
+
+}
+
+main ul h5, main ul h2{
+    text-align: center;
+    cursor: pointer;
 }
 
 footer{
-
     border: 5px solid black;
     display: flex;
     flex-direction: row;
     justify-content:center;
     align-items: center;
-
 }
 
-
-footer h6{
-   
-   color: black;
-   text-align: left;
-   height: 15px ;
-   padding: 20px ;
-   width: 30px;
-   
+footer section h2{
+   display: inline;
+   text-align: center;
+   width: 200px;
+   margin-left: 10px;
 }
 
-footer picture{
-   width: 20%;
-
+p.footer{
+   background-image: url(/img/face\ e\ insta\ 1.svg);
+   height: 50px;
+   width: 100px;
+   background-repeat: no-repeat;
+   margin-left: 20px;
+   position: center;
+   cursor: pointer;
 }
-    
-
-
